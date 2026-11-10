@@ -121,3 +121,10 @@
 
 })(jQuery);
 
+
+// Automatically keep the footer copyright year current on every page.
+document.addEventListener('DOMContentLoaded', function () {
+  document.querySelectorAll('.copyright').forEach(function (element) {
+    element.innerHTML = element.innerHTML.replace(/(Copyright\\s*(?:&copy;|©)\\s*)\\d{4}/i, '$1' + new Date().getFullYear());
+  });
+});
