@@ -113,19 +113,34 @@
     
         <main id="main">
 
-            <section id="intro" class="clearfix">
-                <div class="container">
-                    <div class="intro-img">                  
-                        <img src="images/viralbg.png" alt="" class="img-fluid" style="margin-top: -40px">
+            <section id="intro" class="premium-hero clearfix" aria-label="Viralstrings introduction">
+                <div class="hero-glow hero-glow-one" aria-hidden="true"></div>
+                <div class="hero-glow hero-glow-two" aria-hidden="true"></div>
+                <div class="container premium-hero-inner">
+                    <div class="intro-info premium-hero-copy">
+                        <p class="hero-eyebrow"><span class="hero-eyebrow-dot"></span> AI-POWERED DIGITAL TRANSFORMATION</p>
+                        <h1>Turn Bold Ideas Into <span>Digital Advantage.</span></h1>
+                        <p class="hero-tagline">Intelligent Technology. Meaningful Growth.</p>
+                        <p class="hero-description">Bring your next big idea to life with AI automation, digital marketing, custom software and connected technology built around your business.</p>
+                        <div class="hero-actions">
+                            <a href="contactus.html" class="btn-get-started">Let’s Get Started <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                            <a href="#services" class="btn-services scrollto">Explore Our Services</a>
+                        </div>
+                        <p class="hero-capabilities">AI AUTOMATION <span>·</span> DIGITAL MARKETING <span>·</span> SOFTWARE <span>·</span> IoT</p>
                     </div>
-                    <div class="intro-info">
-                        <h2>We provide<br><span>solutions</span><br>for your business!</h2>
-                        <div>
-                            <a href="contactus.html" class="btn-get-started">Get Started</a>
-                            <a href="#services" class="btn-services scrollto">Our Features</a>
+                    <div class="intro-img premium-hero-visual" aria-label="Viralstrings digital technology illustration">
+                        <div class="hero-image-halo" aria-hidden="true"></div>
+                        <div class="hero-image-frame">
+                            <img src="images/viralbg.png" alt="Digital solutions and technology illustration" class="img-fluid">
+                        </div>
+                        <div class="hero-float-card" aria-hidden="true">
+                            <span class="hero-card-icon"><i class="fa fa-bolt"></i></span>
+                            <span><strong>Ideas into impact</strong><small>Technology that moves business forward</small></span>
                         </div>
                     </div>
                 </div>
+                <a href="#about" class="hero-scroll-cue scrollto" aria-label="Scroll to explore"><span>SCROLL TO EXPLORE</span><i class="fa fa-long-arrow-down" aria-hidden="true"></i></a>
+                <div class="hero-scroll-progress" aria-hidden="true"><span></span></div>
             </section> 
             <main id="main">
                 <section id="about">
@@ -428,6 +443,37 @@
 
 <!-- Template Main Javascript File -->
 <script src="js/main.js"></script>
+<script>
+(function () {
+    var hero = document.querySelector('.premium-hero');
+    if (!hero) return;
+    var visual = hero.querySelector('.premium-hero-visual');
+    var progress = hero.querySelector('.hero-scroll-progress span');
+    var ticking = false;
+    function updateHeroScroll() {
+        var y = window.pageYOffset || document.documentElement.scrollTop || 0;
+        var distance = Math.max(hero.offsetHeight, 1);
+        if (visual && window.innerWidth > 767) {
+            visual.style.setProperty('--hero-parallax', Math.min(y * 0.12, 48) + 'px');
+        } else if (visual) {
+            visual.style.setProperty('--hero-parallax', '0px');
+        }
+        if (progress) {
+            progress.style.transform = 'scaleX(' + Math.min(y / distance, 1) + ')';
+        }
+        ticking = false;
+    }
+    window.addEventListener('scroll', function () {
+        if (!ticking) {
+            window.requestAnimationFrame(updateHeroScroll);
+            ticking = true;
+        }
+    }, { passive: true });
+    window.addEventListener('resize', updateHeroScroll);
+    updateHeroScroll();
+}());
+</script>
+
 
 <!--<script>
             var preloader = document.getElementById('loadi');
