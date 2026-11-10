@@ -1684,3 +1684,19 @@ h6 {
   }
   .premium-hero .premium-hero-visual { transform: none !important; }
 }
+
+
+/* Ensure premium hero overrides the original ID-based intro theme rules. */
+#intro.premium-hero {
+  padding: 145px 0 105px !important;
+  background:
+    radial-gradient(ellipse at 78% 45%, rgba(25, 103, 190, .28) 0%, rgba(10, 31, 62, 0) 42%),
+    linear-gradient(115deg, #071426 0%, #0a1d38 48%, #07172c 100%) !important;
+}
+#intro.premium-hero .intro-info { width: 54%; float: none; }
+#intro.premium-hero .intro-img { width: 46%; float: none; }
+@media (max-width: 767px) {
+  #intro.premium-hero { padding: 125px 0 100px !important; }
+  #intro.premium-hero .intro-info,
+  #intro.premium-hero .intro-img { width: 100%; float: none; }
+}
