@@ -169,3 +169,8 @@ textarea.form-control-vs{min-height:135px;resize:vertical}
 @keyframes vsTestimonialIn{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
 @media(max-width:640px){.testimonial-slide{padding:30px 24px;min-height:270px}.testimonial-placeholder{font-size:18px}.testimonial-track{min-height:270px}}
 @media(prefers-reduced-motion:reduce){.testimonial-slide{animation:none}}
+
+/* Scroll-triggered entrance for the homepage testimonial area */
+.testimonial-section .section-heading,.testimonial-slider{opacity:0;transform:translateY(18px);transition:opacity .65s ease,transform .65s ease}
+.testimonial-section .section-heading.is-in-view,.testimonial-slider.is-in-view{opacity:1;transform:translateY(0)}
+@media(prefers-reduced-motion:reduce){.testimonial-section .section-heading,.testimonial-slider{opacity:1;transform:none;transition:none}}
