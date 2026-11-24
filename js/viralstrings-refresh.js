@@ -22,6 +22,22 @@ document.addEventListener("DOMContentLoaded",function(){
     if(target){target.hidden=false;target.scrollIntoView({behavior:"smooth",block:"center"});}
   }
 
+
+  // Reveal the testimonial heading and slider as they enter the viewport.
+  var revealItems=document.querySelectorAll(".testimonial-section .section-heading,.testimonial-slider");
+  if("IntersectionObserver" in window && !reduced){
+    var revealObserver=new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){
+        if(entry.isIntersecting){
+          entry.target.classList.add("is-in-view");
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    },{threshold:0.15});
+    revealItems.forEach(function(item){revealObserver.observe(item);});
+  }else{
+    revealItems.forEach(function(item){item.classList.add("is-in-view");});
+  }
   // Accessible homepage testimonial carousel: manual controls and gentle rotation.
   var slider=document.querySelector("[data-testimonial-slider]");
   if(slider){
