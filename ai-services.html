@@ -1,219 +1,74 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>AI Services for Business | Viralstrings</title>
-  <meta name="description" content="Discover AI agents and business automation solutions from Viralstrings. Automate customer support, lead generation, bookings, marketing and everyday workflows.">
-  <link rel="icon" type="image/png" href="images/fav-icon.png">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
-  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-  <link href="lib/animate/animate.min.css" rel="stylesheet">
-  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
-  <style>
-    body { padding-top: 100px !important; }
-    @media (max-width: 991px) { body { padding-top: 85px !important; } }
-    .ai-hero { background: linear-gradient(120deg,#102b55 0%,#174d83 58%,#167b9a 100%); color:#fff; padding:85px 0; }
-    .ai-hero h1 { color:#fff; font-size:42px; font-weight:700; margin-bottom:18px; }
-    .ai-hero .lead { color:#e8f2fb; max-width:760px; line-height:1.8; }
-    .ai-kicker { color:#69d5df; font-weight:700; letter-spacing:2px; text-transform:uppercase; }
-    .ai-btn { display:inline-block; border-radius:28px; padding:13px 25px; margin:12px 10px 0 0; font-weight:700; background:#fff; color:#123d67; }
-    .ai-btn-outline { border:2px solid #fff; color:#fff; background:transparent; }
-    .ai-section { padding:65px 0; }
-    .ai-section h2 { font-weight:700; color:#173b62; margin-bottom:15px; }
-    .ai-intro { max-width:850px; margin:0 auto 35px; line-height:1.8; }
-    .ai-card { background:#fff; border:1px solid #e7edf3; border-radius:12px; padding:28px; height:100%; box-shadow:0 8px 26px rgba(20,55,90,.07); margin-bottom:25px; }
-    .ai-card .ai-icon { font-size:30px; color:#1688a4; margin-bottom:15px; }
-    .ai-card h3 { color:#173b62; font-size:20px; font-weight:700; }
-    .ai-card p, .ai-card li { line-height:1.7; }
-    .ai-card ul { padding-left:20px; margin-bottom:15px; }
-    .ai-ideal { color:#45627d; font-size:14px; }
-    .ai-muted { background:#f3f7fb; }
-    .ai-steps .step { border-left:3px solid #1a91a9; padding:5px 0 8px 20px; margin-bottom:22px; }
-    .ai-steps h3 { color:#173b62; font-size:18px; font-weight:700; }
-    .ai-cta { background:linear-gradient(120deg,#12345d,#147b94); color:#fff; padding:65px 20px; text-align:center; }
-    .ai-cta h2 { color:#fff; }
-    .ai-cta p { color:#e7f2f8; max-width:800px; margin:0 auto 18px; line-height:1.8; }
-    .ai-table { background:#fff; }
-    .ai-table td, .ai-table th { padding:14px; border:1px solid #e4ebf1; }
-    .ai-table th { background:#eaf2f8; color:#173b62; }
-    .ai-feature-icon { color:#1688a4; font-size:30px; margin-bottom:14px; }
-    .ai-industry { display:flex; flex-direction:column; align-items:center; justify-content:center; min-height:135px; gap:12px; font-weight:700; color:#173b62; }
-    .ai-industry i { color:#1688a4; font-size:30px; }
-    .ai-steps .step h3 i { color:#1688a4; margin-right:7px; }
-    .ai-card { transition:transform .25s ease, box-shadow .25s ease; }
-    .ai-card:hover { transform:translateY(-5px); box-shadow:0 14px 32px rgba(20,55,90,.12); }
-    @media (prefers-reduced-motion: reduce) { .ai-card, .ai-card:hover { transition:none; transform:none; } .wow { animation:none !important; visibility:visible !important; } }
-    @media(max-width:767px){.ai-hero{padding:55px 0}.ai-hero h1{font-size:32px}.ai-section{padding:45px 0}}
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI & Business Automation | Viralstrings</title>
+<meta name="description" content="Explore AI-powered business automation, workflow automation, CRM and sales automation, customer communications and software integrations from Viralstrings.">
+<meta name="theme-color" content="#007BFF">
+<link rel="canonical" href="https://viralstrings.com/ai-services.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Viralstrings">
+<meta property="og:title" content="AI & Business Automation | Viralstrings">
+<meta property="og:description" content="Explore AI-powered business automation, workflow automation, CRM and sales automation, customer communications and software integrations from Viralstrings.">
+<link rel="icon" type="image/png" href="images/fav-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+<link href="css/viralstrings-refresh.css" rel="stylesheet">
 </head>
 <body>
-<header id="header" class="fixed-top">
-  <div class="container">
-    <div class="logo float-left"><a href="index.html"><img src="images/viral-strings-logo-png.png" alt="Viralstrings" class="img-fluid"></a></div>
-    <nav class="main-nav float-right d-none d-lg-block">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li class="drop-down"><a>About</a><ul>
-          <li><a href="our-agency.html">Our Agency</a></li><li><a href="our-sectors.html">Our Sectors</a></li><li><a href="why-viral-strings.html">Why Viral Strings</a></li>
-        </ul></li>
-        <li class="drop-down active"><a>Services</a><ul>
-          <li class="drop-down"><a href="ai-services.html">AI Services</a><ul><li><a href="lead-management-automation.html">Lead Management Automation</a></li><li><a href="invoice-receipt-automation.html">Invoice & Receipt Automation</a></li><li><a href="appointment-automation.html">Appointment Automation</a></li><li><a href="email-automation.html">Email Automation</a></li><li><a href="social-media-automation.html">Social Media Automation</a></li><li><a href="inventory-automation.html">Inventory Automation</a></li><li><a href="ai-customer-support.html">AI Customer Support</a></li><li><a href="business-reporting.html">Business Reporting</a></li></ul></li>
-          <li class="drop-down"><a href="digital-marketing.html">Digital Marketing</a><ul>
-            <li><a href="branding.html">Branding</a></li><li><a href="email-marketing.html">Email Marketing</a></li><li><a href="social-media-marketing.html">Social Media Marketing</a></li><li><a href="search-engine-optimization.html">Search Engine Optimization</a></li><li><a href="pay-per-click-management.html">Pay per Click Management</a></li>
-          </ul></li>
-          <li class="drop-down"><a href="software-development.html">Software Development</a><ul>
-            <li><a href="web-application.html">Web Application</a></li><li><a href="websites.html">Websites</a></li><li><a href="enterprise-business-solutions.html">Enterprise Business Solutions</a></li><li><a href="applications.html">Applications</a></li><li><a href="point-of-sales.html">Point of Sales</a></li>
-          </ul></li>
-          <li class="drop-down"><a href="internet-of-things.html">Internet Of Things</a><ul>
-            <li><a href="tracking.html">Tracking</a></li><li><a href="security.html">Security</a></li><li><a href="weather-monitoring.html">Weather Monitoring</a></li><li><a href="industrial-automation.html">Industrial Automation</a></li><li><a href="telecom-infrastructure.html">Telecom Infrastructure</a></li>
-          </ul></li>
-        </ul></li>
-        <li><a href="contactus.html">Contact Us</a></li>
-      </ul>
-    </nav>
-  </div>
+
+<header class="site-header">
+ <div class="container nav-wrap">
+  <a class="brand" href="index.html" aria-label="Viralstrings home"><img src="images/viral-strings-logo-png.png" alt="Viralstrings"></a>
+  <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-controls="primary-navigation" aria-expanded="false"><i class="fa fa-bars" aria-hidden="true"></i></button>
+  <nav aria-label="Main navigation">
+   <ul class="nav-list" id="primary-navigation">
+    <li><a href="index.html" >Home</a></li>
+    <li><a href="aboutus.html" >About Us</a></li>
+    <li class="has-dropdown"><a href="services.html" aria-current="page">Services <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+     <ul class="dropdown-menu">
+      <li><a href="software-development.html">Web &amp; Application Development</a></li>
+      <li><a href="ai-services.html">AI &amp; Business Automation</a></li>
+      <li><a href="digital-marketing.html">Digital Marketing</a></li>
+      <li><a href="internet-of-things.html">Internet of Things (IoT)</a></li>
+     </ul>
+    </li>
+    <li><a href="products.html" >Products</a></li>
+    <li><a class="nav-cta" href="contactus.html" >Contact Us <i class="fa fa-arrow-right" aria-hidden="true"></i></a></li>
+   </ul>
+  </nav>
+ </div>
 </header>
-<main id="main">
-  <section class="ai-hero">
-    <div class="container">
-      <div class="ai-kicker wow fadeInDown" data-wow-duration="0.8s"><i class="fa fa-magic" aria-hidden="true"></i> Viralstrings AI Services</div>
-      <h1 class="wow fadeInUp" data-wow-delay="0.1s">AI Services for Business</h1>
-      <h3 class="wow fadeInUp" data-wow-delay="0.2s" style="color:#fff;font-weight:600">Intelligent AI Agents. Smarter Workflows. Better Business.</h3>
-      <p class="lead wow fadeInUp" data-wow-delay="0.3s">Transform the way your business works with AI-powered agents designed to work for you. At Viralstrings, we help businesses simplify operations, automate repetitive tasks, and deliver better customer experiences through intelligent AI agents and business automation solutions.</p>
-      <p class="lead wow fadeInUp" data-wow-delay="0.4s">From answering customer enquiries to managing leads, processing information, and supporting daily operations, our AI solutions help your business work smarter, faster, and more efficiently.</p>
-      <p><strong>Make AI work for your business — not the other way around.</strong></p>
-      <a class="ai-btn wow fadeInUp" data-wow-delay="0.5s" href="#ai-solutions"><i class="fa fa-rocket" aria-hidden="true"></i> Explore AI Solutions</a><a class="ai-btn ai-btn-outline wow fadeInUp" data-wow-delay="0.6s" href="contactus.html"><i class="fa fa-calendar" aria-hidden="true"></i> Book a Free Consultation</a>
-    </div>
-  </section>
-  <section class="ai-section ai-muted"><div class="container"><div class="text-center ai-intro"><h2>Explore Our AI Automation Services</h2><p>Choose a focused solution to help automate everyday business tasks. Each service can be tailored to your workflow and the systems you use.</p></div><div class="row"><div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0s"><article class="ai-card"><div class="ai-icon"><i class="fa fa-filter" aria-hidden="true"></i></div><h3>Lead Management Automation</h3><p>Capture, qualify and follow up with leads.</p><a href="lead-management-automation.html" class="btn btn-primary" style="border-radius:24px">Learn More</a></article></div><div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.07s"><article class="ai-card"><div class="ai-icon"><i class="fa fa-file-text-o" aria-hidden="true"></i></div><h3>Invoice & Receipt Automation</h3><p>Streamline document capture, extraction and approvals.</p><a href="invoice-receipt-automation.html" class="btn btn-primary" style="border-radius:24px">Learn More</a></article></div><div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.14s"><article class="ai-card"><div class="ai-icon"><i class="fa fa-calendar-check-o" aria-hidden="true"></i></div><h3>Appointment Automation</h3><p>Coordinate bookings, confirmations and reminders.</p><a href="appointment-automation.html" class="btn btn-primary" style="border-radius:24px">Learn More</a></article></div><div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.21000000000000002s"><article class="ai-card"><div class="ai-icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></div><h3>Email Automation</h3><p>Organize inboxes, route requests and manage follow-ups.</p><a href="email-automation.html" class="btn btn-primary" style="border-radius:24px">Learn More</a></article></div><div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0s"><article class="ai-card"><div class="ai-icon"><i class="fa fa-share-alt" aria-hidden="true"></i></div><h3>Social Media Automation</h3><p>Plan content, manage approvals and review performance.</p><a href="social-media-automation.html" class="btn btn-primary" style="border-radius:24px">Learn More</a></article></div><div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.07s"><article class="ai-card"><div class="ai-icon"><i class="fa fa-cubes" aria-hidden="true"></i></div><h3>Inventory Automation</h3><p>Monitor stock levels and automate routine alerts.</p><a href="inventory-automation.html" class="btn btn-primary" style="border-radius:24px">Learn More</a></article></div><div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.14s"><article class="ai-card"><div class="ai-icon"><i class="fa fa-comments-o" aria-hidden="true"></i></div><h3>AI Customer Support</h3><p>Answer common questions and escalate complex requests.</p><a href="ai-customer-support.html" class="btn btn-primary" style="border-radius:24px">Learn More</a></article></div><div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.21000000000000002s"><article class="ai-card"><div class="ai-icon"><i class="fa fa-bar-chart" aria-hidden="true"></i></div><h3>Business Reporting</h3><p>Turn connected business data into scheduled summaries.</p><a href="business-reporting.html" class="btn btn-primary" style="border-radius:24px">Learn More</a></article></div></div></div></section>
-  <section id="ai-solutions" class="ai-section">
-    <div class="container">
-      <div class="text-center ai-intro"><h2>AI Agents That Work for Your Business</h2><p>Imagine having a digital team that can handle repetitive tasks, respond to customers, organize information, and support your business around the clock. Our AI agents are designed to integrate into your business workflows and assist your team with everyday operations.</p></div>
-      <div class="row">
-        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-duration="0.8s"><article class="ai-card"><div class="ai-icon"><i class="fa fa-comments-o"></i></div><h3>1. AI Customer Support Agent</h3><p>Deliver faster customer support without increasing your workload.</p><ul><li>Answer frequently asked customer questions.</li><li>Provide instant responses to website enquiries.</li><li>Handle common customer service requests.</li><li>Collect customer information and enquiries.</li><li>Escalate complex requests to your team.</li><li>Provide 24/7 automated assistance.</li></ul><p class="ai-ideal"><strong>Ideal for:</strong> Retail stores, service businesses, restaurants, e-commerce, and professional services.</p></article></div>
-        <div class="col-lg-4 col-md-6"><article class="ai-card"><div class="ai-icon"><i class="fa fa-line-chart"></i></div><h3>2. AI Sales &amp; Lead Generation Agent</h3><p>Never miss an opportunity to connect with a potential customer.</p><ul><li>Capture leads from your website.</li><li>Engage visitors through intelligent conversations.</li><li>Qualify potential customers.</li><li>Collect contact information.</li><li>Send automated follow-up messages.</li><li>Organize and forward qualified leads to your sales team.</li></ul><p class="ai-ideal"><strong>Ideal for:</strong> Real estate agencies, consultants, agencies, contractors, and B2B businesses.</p></article></div>
-        <div class="col-lg-4 col-md-6"><article class="ai-card"><div class="ai-icon"><i class="fa fa-briefcase"></i></div><h3>3. AI Business Assistant</h3><p>Your intelligent digital assistant for everyday business operations.</p><ul><li>Organize business information.</li><li>Draft emails and customer responses.</li><li>Summarize documents and reports.</li><li>Assist with scheduling and administrative tasks.</li><li>Retrieve information from approved business documents.</li><li>Support internal team workflows.</li></ul><p class="ai-ideal"><strong>Ideal for:</strong> Small businesses, entrepreneurs, managers, and administrative teams.</p></article></div>
-        <div class="col-lg-4 col-md-6"><article class="ai-card"><div class="ai-icon"><i class="fa fa-calendar-check-o"></i></div><h3>4. AI Appointment &amp; Booking Agent</h3><p>Make appointment management easier for your business and customers.</p><ul><li>Respond to booking enquiries.</li><li>Check available appointment slots through connected systems.</li><li>Schedule and manage appointments.</li><li>Send confirmations and reminders.</li><li>Handle rescheduling and cancellation requests.</li><li>Reduce manual booking administration.</li></ul><p class="ai-ideal"><strong>Ideal for:</strong> Clinics, salons, consultants, automotive services, and local businesses.</p></article></div>
-        <div class="col-lg-4 col-md-6"><article class="ai-card"><div class="ai-icon"><i class="fa fa-bullhorn"></i></div><h3>5. AI Marketing &amp; Social Media Agent</h3><p>Make your marketing workflow faster and more consistent.</p><ul><li>Generate social media content ideas.</li><li>Draft Facebook and Instagram posts.</li><li>Create marketing campaign concepts.</li><li>Generate promotional content.</li><li>Assist with customer engagement.</li><li>Prepare content calendars and campaign reports.</li></ul><p class="ai-ideal"><strong>Ideal for:</strong> Small businesses, marketing agencies, e-commerce, and local brands.</p></article></div>
-        <div class="col-lg-4 col-md-6"><article class="ai-card"><div class="ai-icon"><i class="fa fa-cogs"></i></div><h3>6. Custom AI Agents</h3><p>Have a unique business process that needs automation? We design custom AI agents around your specific requirements.</p><ul><li>AI document processing agents.</li><li>Invoice and receipt processing agents.</li><li>Internal knowledge-base assistants.</li><li>Customer enquiry management agents.</li><li>Email management and response agents.</li><li>Inventory and order assistance.</li><li>Multi-agent business automation systems.</li></ul><p><strong>If your business has repetitive work, there may be an opportunity to automate it.</strong></p></article></div>
-      </div>
-    </div>
-  </section>
-  <section class="ai-section ai-muted">
-    <div class="container">
-      <div class="text-center ai-intro"><h2>How AI Agents Help Your Business</h2><p>Match common business challenges with practical AI-powered solutions.</p></div>
-      <div class="table-responsive"><table class="table ai-table"><thead><tr><th>Business challenge</th><th>AI-powered solution</th></tr></thead><tbody>
-        <tr><td>Too many customer enquiries</td><td>AI Customer Support</td></tr><tr><td>Missed sales opportunities</td><td>AI Lead Generation</td></tr><tr><td>Repetitive administrative tasks</td><td>AI Business Assistant</td></tr><tr><td>Manual appointment scheduling</td><td>AI Booking Agent</td></tr><tr><td>Time-consuming content creation</td><td>AI Marketing Agent</td></tr><tr><td>Repetitive document processing</td><td>Custom AI Agents</td></tr>
-      </tbody></table></div>
-      <h2 class="text-center" style="margin-top:45px">Benefits of AI Automation</h2>
-      <div class="row">
-        <div class="col-md-4 wow fadeInUp" data-wow-delay="0.05s"><article class="ai-card"><div class="ai-feature-icon"><i class="fa fa-clock-o" aria-hidden="true"></i></div><h3>Save Time</h3><p>Reduce repetitive manual work.</p></article></div><div class="col-md-4 wow fadeInUp" data-wow-delay="0.12s"><article class="ai-card"><div class="ai-feature-icon"><i class="fa fa-tasks" aria-hidden="true"></i></div><h3>Improve Efficiency</h3><p>Streamline everyday business processes.</p></article></div><div class="col-md-4 wow fadeInUp" data-wow-delay="0.19s"><article class="ai-card"><div class="ai-feature-icon"><i class="fa fa-smile-o" aria-hidden="true"></i></div><h3>Better Customer Experience</h3><p>Respond to customers faster.</p></article></div><div class="col-md-4 wow fadeInUp" data-wow-delay="0.05s"><article class="ai-card"><div class="ai-feature-icon"><i class="fa fa-bullseye" aria-hidden="true"></i></div><h3>Capture More Opportunities</h3><p>Manage leads and enquiries consistently.</p></article></div><div class="col-md-4 wow fadeInUp" data-wow-delay="0.12s"><article class="ai-card"><div class="ai-feature-icon"><i class="fa fa-line-chart" aria-hidden="true"></i></div><h3>Scale Smarter</h3><p>Support business growth without adding unnecessary administrative workload.</p></article></div><div class="col-md-4 wow fadeInUp" data-wow-delay="0.19s"><article class="ai-card"><div class="ai-feature-icon"><i class="fa fa-refresh" aria-hidden="true"></i></div><h3>Work Around the Clock</h3><p>Make selected business processes available 24/7.</p></article></div>
-      </div>
-    </div>
-  </section>
-  <section class="ai-section"><div class="container"><div class="text-center ai-intro"><h2>Our AI Implementation Process</h2><p>We make adopting AI simple, practical, and accessible.</p></div><div class="row ai-steps">
-    <div class="col-md-6 wow fadeInLeft"><div class="step"><h3><i class="fa fa-search" aria-hidden="true"></i> Step 1 – Discover</h3><p>We learn about your business, understand your challenges, and identify opportunities for AI automation.</p></div></div>
-    <div class="col-md-6 wow fadeInRight"><div class="step"><h3><i class="fa fa-pencil" aria-hidden="true"></i> Step 2 – Design</h3><p>We develop an AI solution tailored to your business processes, requirements, and budget.</p></div></div>
-    <div class="col-md-6 wow fadeInLeft"><div class="step"><h3><i class="fa fa-code" aria-hidden="true"></i> Step 3 – Build</h3><p>We configure and integrate your AI agents with the appropriate tools, platforms, and business systems.</p></div></div>
-    <div class="col-md-6 wow fadeInRight"><div class="step"><h3><i class="fa fa-check-circle-o" aria-hidden="true"></i> Step 4 – Test</h3><p>We test workflows, responses, integrations, permissions, and reliability before deployment.</p></div></div>
-    <div class="col-md-12 wow fadeInUp"><div class="step"><h3><i class="fa fa-rocket" aria-hidden="true"></i> Step 5 – Launch &amp; Improve</h3><p>We help deploy your solution and identify opportunities to improve its performance over time.</p></div></div>
-  </div></div></section>
-  <section class="ai-section ai-muted"><div class="container"><div class="text-center ai-intro"><h2>AI Solutions for Every Business</h2><p>Whether you're running a small local business or managing a growing company, AI can help simplify your operations. We work with businesses across industries, including:</p></div><div class="row text-center">
-    <div class="col-md-3 col-6 wow fadeInUp"><article class="ai-card ai-industry"><i class="fa fa-shopping-cart" aria-hidden="true"></i><span>Retail and e-commerce</span></article></div><div class="col-md-3 col-6 wow fadeInUp" data-wow-delay="0.05s"><article class="ai-card ai-industry"><i class="fa fa-cutlery" aria-hidden="true"></i><span>Restaurants and hospitality</span></article></div><div class="col-md-3 col-6 wow fadeInUp" data-wow-delay="0.1s"><article class="ai-card ai-industry"><i class="fa fa-home" aria-hidden="true"></i><span>Real estate</span></article></div><div class="col-md-3 col-6 wow fadeInUp" data-wow-delay="0.15s"><article class="ai-card ai-industry"><i class="fa fa-briefcase" aria-hidden="true"></i><span>Professional services</span></article></div><div class="col-md-3 col-6 wow fadeInUp" data-wow-delay="0.05s"><article class="ai-card ai-industry"><i class="fa fa-car" aria-hidden="true"></i><span>Automotive businesses</span></article></div><div class="col-md-3 col-6 wow fadeInUp" data-wow-delay="0.1s"><article class="ai-card ai-industry"><i class="fa fa-heartbeat" aria-hidden="true"></i><span>Healthcare administration</span></article></div><div class="col-md-3 col-6 wow fadeInUp" data-wow-delay="0.15s"><article class="ai-card ai-industry"><i class="fa fa-bullhorn" aria-hidden="true"></i><span>Marketing agencies</span></article></div><div class="col-md-3 col-6 wow fadeInUp" data-wow-delay="0.05s"><article class="ai-card ai-industry"><i class="fa fa-wrench" aria-hidden="true"></i><span>Construction and home services</span></article></div><div class="col-md-3 col-6 wow fadeInUp" data-wow-delay="0.1s"><article class="ai-card ai-industry"><i class="fa fa-lightbulb-o" aria-hidden="true"></i><span>Startups and entrepreneurs</span></article></div>
-  </div></div></section>
-  <section class="ai-section"><div class="container"><div class="text-center ai-intro"><h2>Why Choose Viralstrings?</h2><h4 style="color:#1688a4;font-weight:700">Practical AI. Real Business Solutions.</h4><p>At Viralstrings, we believe AI should solve real business problems rather than simply add another complicated technology to your operations. Our approach focuses on:</p></div><div class="row">
-    <div class="col-md-6"><ul><li>Solutions designed around your business.</li><li>Affordable and scalable automation.</li><li>Practical AI implementation.</li></ul></div><div class="col-md-6"><ul><li>Integration with your existing tools and workflows.</li><li>Human oversight and appropriate data protection.</li><li>Ongoing improvement and support options.</li></ul></div>
-  </div><p class="text-center" style="max-width:850px;margin:20px auto;line-height:1.8">We don't believe every business needs complicated AI systems. We help you identify what is worth automating and build a solution that makes sense.</p></div></section>
-  <section class="ai-cta"><div class="container"><h2>Ready to Put AI to Work?</h2><p>Your business doesn't need to do everything manually. Let's identify the repetitive tasks slowing you down and explore how intelligent AI agents can help your business operate more efficiently.</p><h4 style="color:#fff">Start with a free AI business consultation.</h4><p>Tell us about your business, your challenges, and what you want to automate. We'll help you explore the right solution.</p><a class="ai-btn" href="contactus.html">Book a Free Consultation</a><a class="ai-btn ai-btn-outline" href="contactus.html">Contact Viralstrings</a></div></section>
-</main>
-<footer id="footer">
-    <div class="footer-top">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-1"></div>
-                <div class="col-lg-6 col-md-6 footer-info">
-                    <h3>Viral Strings</h3>
-                    <p>Viral Strings is a Digital Agency company which deals with various digital services, we have assembled a talented team of digital strategists, designers, developers, marketers, communications specialists, project managers and business developers to work in a collaborative manner on our client projects. We build on each other's expertise, working together in teams to generate great outcomes for projects.</p>
-                    <div style="clear:both;height:19px;"></div>
-                    <div class="social-links">
-                        <a href="https://twitter.com/viralstrings" target="_blank" class="twitter"><i class="fa fa-twitter"></i></a>
-                        <a href="https://www.facebook.com/viralstrings" target="_blank" class="facebook"><i class="fa fa-facebook"></i></a>
-                        <a href="https://www.instagram.com/viralstringsoffl" target="_blank" class="instagram"><i class="fa fa-instagram"></i></a>
-                        <a href="https://www.flickr.com/people/145540645@N02" target="_blank" class="flickr"><i class="fa fa-flickr"></i></a>
-                        <a href="https://www.linkedin.com" target="_blank" class="linkedin"><i class="fa fa-linkedin"></i></a>
-                        <a href="https://in.pinterest.com/theviralstrings" target="_blank" class="pintrest"><i class="fa fa-pinterest"></i></a>
-                        <a href="https://www.quora.com/profile/Viral-String" target="_blank" class="quora"><i class="fa fa-quora"></i></a>
-                        <a href="https://www.reddit.com/user/Viralstrings" target="_blank" class="reddit"><i class="fa fa-reddit"></i></a>
-                        <a href="https://viralstrings.tumblr.com" target="_blank" class="tumblr"><i class="fa fa-tumblr"></i></a>
-                        <a href="https://www.youtube.com/channel/UCFkaIkThF857izygLCIYnUg" target="_blank" class="youtube"><i class="fa fa-youtube"></i></a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 footer-links">
-                    <h3 style="margin-left:70px;">Useful Links</h3>
-                    <div class="row">
-                        <div class="col-md-2"></div>
-                        <div class="col-md-5">
-                            <ul style="list-style: square;">
-                                <li><a href="search-engine-optimization.html">SEO Services</a></li>
-                                <li><a href="pay-per-click-management.html">Pay-per-click</a></li>
-                                <li><a href="social-media-marketing.html">Social Media</a></li>
-                                <li><a href="email-marketing.html">Email Marketing</a></li>
-                                <li><a href="branding.html">Branding</a></li>
-                                <li><a href="web-application.html">Web Development</a></li>
-                                <li><a href="websites.html">Websites</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-md-5">
-                            <ul style="list-style: square;">
-                                <li><a href="applications.html">Applications</a></li>
-                                <li><a href="point-of-sales.html">Point Of Sale</a></li>
-                                <li><a href="enterprise-business-solutions.html">Enterprise Solutions</a></li>
-                                <li><a href="tracking.html">Tracking</a></li>
-                                <li><a href="security.html">Security</a></li>
-                                <li><a href="weather-monitoring.html">Weather Monitoring</a></li>
-                                <li><a href="industrial-automation.html">Industrial Automations</a></li>
-                                <li><a href="telecom-infrastructure.html">Telecom Infrastruction</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <section id="services" class="section-bg">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-4 wow bounceInUp" data-wow-duration="1.4s">
-                            <div class="box">
-                                <div class="icon" style="margin-left: 23px;alignment-adjust: central; margin-bottom: 15px"><img height="60" width="60" src="images/email.png" class="img-fluid" alt=""></div>
-                                <h2 class="title" style="font-size: 16px;margin-left: 60px"><a href="contactus.html">info@viralstrings.com</a></h2>
-                                <p class="description" style="margin-left: 60px; color: black;">Online Support</p>
-                            </div>
-                        </div>
-                        <div class="col-md-4 wow bounceInUp" data-wow-duration="1.4s">
-                            <div class="box">
-                                <div class="icon" style="margin-left: 18px;margin-bottom: 15px"><img height="60" width="60" src="img/phone1.png" class="img-fluid" alt=""></div>
-                                <h2 class="title" style="font-size: 16px;margin-left: 60px"><a href="contactus.html">+1 2508796916</a></h2>
-                                <p class="description" style="margin-left: 60px;color: black;">24x7 Available.</p>
-                            </div>
-                        </div>
-                        <div class="col-md-4 wow bounceInUp" data-wow-duration="1.4s">
-                            <div class="box">
-                                <div class="icon" style="margin-left: 21px;margin-bottom: 15px"><img height="60" width="60" src="img/pin1.png" class="img-fluid" alt=""></div>
-                                <h2 class="title" style="font-size: 16px;margin-left: 60px"><a href="contactus.html">Banjara Hills Road No.2</a></h2>
-                                <p class="description" style="margin-left: 60px;color: black;">Sriman Chambers,Hyderabad.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div style="text-align: center" class="row">
-                        <div class="col-md-12">
-                            <div style="color: black;" class="copyright">Copyright &copy; 2026 <strong>viral strings</strong> Technologies Private Limited.</div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </div>
+<main class="page-shell">
+<section class="page-hero"><div class="container"><div class="breadcrumbs"><a href="index.html">Home</a> / <a href="services.html">Services</a> / AI &amp; Business Automation</div><span class="eyebrow">Smarter workflows</span><h1>AI &amp; Business Automation</h1><p>Explore practical ways to streamline selected business processes through automation, AI-assisted workflows and connected systems.</p></div></section>
+<section class="section"><div class="container split-section"><div class="split-copy"><h2>Spend less time on repetitive work.</h2><p>Many businesses spend valuable time managing repetitive activities, handling manual processes and moving information between different systems.</p><p>Viralstrings helps identify opportunities to streamline these activities through workflow automation, software integrations and practical AI-powered solutions.</p><a class="btn-primary-vs" href="contactus.html">Discuss an Automation Project <i class="fa fa-arrow-right"></i></a></div><div class="intro-panel"><div class="big-mark"><i class="fa fa-cogs"></i></div><h3>Start with the process, not the tool.</h3><p class="muted mb-0">We first understand how your work happens today, then explore whether automation is a suitable fit.</p></div></div></section>
+<section class="section section-soft"><div class="container"><div class="section-heading"><span class="eyebrow">Automation capabilities</span><h2>Practical automation for everyday operations</h2><p>Solutions are scoped around your existing tools, process requirements and data.</p></div><div class="content-grid">
+ <article class="content-card"><h3>AI-Powered Business Automation</h3><p>Explore ways to use AI in business processes, information handling and selected everyday operations.</p></article>
+ <article class="content-card"><h3>Workflow Automation</h3><p>Connect business tasks and processes to reduce repetitive manual steps and handoffs.</p></article>
+ <article class="content-card"><h3>CRM &amp; Sales Automation</h3><p>Support lead management, follow-ups, customer information and sales workflows through automation.</p></article>
+ <article class="content-card"><h3>Customer Communication Automation</h3><p>Automate selected customer communication processes, notifications and routine responses.</p></article>
+ <article class="content-card"><h3>Email &amp; Document Automation</h3><p>Improve repetitive email, document preparation, information extraction and processing workflows.</p></article>
+ <article class="content-card"><h3>Business System Integrations</h3><p>Connect compatible applications and services to help information move between business systems.</p></article>
+ <article class="content-card"><h3>Custom AI Solutions</h3><p>Explore tailored AI-powered applications and workflows based on specific business requirements.</p></article>
+</div></div></section>
+<section class="section"><div class="container"><div class="section-heading"><span class="eyebrow">Our approach</span><h2>Understand. Identify. Automate. Improve.</h2></div><div class="process-grid">
+ <div class="process-card"><span class="process-num">01</span><h3>Understand</h3><p>Review your current process.</p></div><div class="process-card"><span class="process-num">02</span><h3>Identify</h3><p>Find repetitive tasks and opportunities.</p></div><div class="process-card"><span class="process-num">03</span><h3>Define</h3><p>Agree requirements and scope.</p></div><div class="process-card"><span class="process-num">04</span><h3>Develop</h3><p>Build and connect the workflow.</p></div><div class="process-card"><span class="process-num">05</span><h3>Review</h3><p>Test outcomes and refine as needed.</p></div>
+</div></div></section></main>
+
+<footer class="site-footer">
+ <div class="container">
+  <div class="footer-grid">
+   <div><div class="footer-brand">Viralstrings</div><p>Technology That Moves Your Business Forward. We help businesses build digital platforms, streamline processes and explore connected technology solutions.</p></div>
+   <div><h3>Explore</h3><ul class="footer-links"><li><a href="aboutus.html">About Us</a></li><li><a href="services.html">Services</a></li><li><a href="products.html">Products</a></li><li><a href="contactus.html">Contact Us</a></li></ul></div>
+   <div class="footer-contact"><h3>Contact</h3><a href="mailto:info@viralstrings.com">info@viralstrings.com</a><a href="mailto:contact@viralstrings.com">contact@viralstrings.com</a><a href="tel:+12508796916">+1 250 879 6916</a><a href="tel:+918008443831">+91 8008443831</a></div>
+  </div>
+  <div class="footer-bottom"><span>© <span data-current-year></span> Viralstrings. All rights reserved.</span><span>Technology That Moves Your Business Forward.</span></div>
+ </div>
 </footer>
-<script src="lib/jquery/jquery.min.js"></script><script src="lib/jquery/jquery-migrate.min.js"></script><script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script><script src="lib/easing/easing.min.js"></script><script src="lib/mobile-nav/mobile-nav.js"></script><script src="lib/wow/wow.min.js"></script><script src="lib/waypoints/waypoints.min.js"></script><script src="lib/counterup/counterup.min.js"></script><script src="lib/owlcarousel/owl.carousel.min.js"></script><script src="lib/isotope/isotope.pkgd.min.js"></script><script src="lib/lightbox/js/lightbox.min.js"></script><script src="js/main.js"></script>
-</body></html>
+<script src="js/viralstrings-refresh.js"></script>
+</body>
+</html>
